@@ -1,0 +1,30 @@
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="conciertos.css">
+  <meta charset="utf-8">
+</head>
+
+
+<body>
+
+<header>
+   La web de los conciertos
+</header>
+<h1>List of concerts</h1> 
+<% @concerts.each do |concert|%>
+<div><%= concert.band_name %>
+
+<%= link_to 'Show',  concert_path(concert)%>
+<%= link_to 'Destroy', concert_path(concert), method: :delete, data: { confirm: 'Are you sure?' } %></div>
+<% end %>
+
+<p>
+    <%= link_to 'New concert', new_concert_path %>
+</p>
+
+<footer>Copyleft Ironhack 2015 ;)</footer>
+
+  </body>
+</html>

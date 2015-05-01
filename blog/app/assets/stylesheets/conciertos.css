@@ -1,0 +1,39 @@
+header {
+  font-size: 40px
+}
+
+h1{
+  font-size: 60px;
+  color: white;
+   margin-left: auto;
+   margin-right: auto;
+   width: 70%;
+}
+
+
+p{
+ 
+   margin-left: auto;
+   margin-right: auto;
+   width: 70%;
+}
+
+article{
+	border: 15px solid navy;
+}
+
+div{
+	border: 5px solid navy;
+	margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+h2{
+	margin-top:500px
+}
+
+footer{
+    margin-top: 200px;
+    margin-left:500px;
+}

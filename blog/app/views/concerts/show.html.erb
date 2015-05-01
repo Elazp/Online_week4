@@ -1,0 +1,54 @@
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="conciertos.css">
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+
+<header>
+   Concert info
+</header>
+
+<article>
+<h1>
+  <%= @concert.band_name %>
+</h1>
+
+<p>
+  <strong>Venue:</strong>
+  <%= @concert.venue %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @concert.city %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @concert.date %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @concert.price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @concert.description %>
+</p>
+</article>
+
+
+<%= link_to 'Back', concerts_path %>
+
+
+<footer>Copyleft Ironhack 2015 ;)</footer>
+
+  </body>
+</html>
