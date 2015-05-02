@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="conciertos.css">
   <meta charset="utf-8">
+   <img src="http://i60.tinypic.com/fmj2hy.jpg" height="100%" width="100%"//>
 </head>
 
 <body>
@@ -45,7 +46,9 @@
 </article>
 
 
-<%= link_to 'Back', concerts_path %>
+
+<p class="button"><%= link_to 'Like', :controller => :concerts, :action => :like %> </p>
+<p class="button"><%= link_to 'Back', concerts_path %></p>
 
 
 <footer>Copyleft Ironhack 2015 ;)</footer>

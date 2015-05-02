@@ -1,12 +1,14 @@
 header {
-  font-size: 40px
+  font-size: 50px;
+  
+  color:white;
+  margin-bottom: 100px
 }
 
 h1{
-  font-size: 60px;
+  font-size: 50px;
   color: white;
-   margin-left: auto;
-   margin-right: auto;
+   margin-left: 80px
    width: 70%;
 }
 
@@ -24,16 +26,42 @@ article{
 
 div{
 	border: 5px solid navy;
-	margin-left: auto;
-  margin-right: auto;
-  width: 70%;
+ margin-top: 5px;
+  width: 50%;
+  font-size: 20px
+  float: left;
 }
 
 h2{
 	margin-top:500px
 }
 
-footer{
-    margin-top: 200px;
-    margin-left:500px;
+
+
+
+aside{
+  font-size: 40px;
+  color: white;
+  float: right;
+  border: 5px solid navy;
+
+
 }
+
+.button {
+  border-style: none;
+  background-color: white;
+  color: blue
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  width: 20%;
+  float: left;
+}
+
+footer{
+  margin-top: 100px;
+  margin-left:500px;
+}
+

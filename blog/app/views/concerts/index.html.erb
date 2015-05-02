@@ -10,9 +10,12 @@
 <body>
 
 <header>
-   La web de los conciertos
+	 <img src="http://i60.tinypic.com/fmj2hy.jpg" height="100%" width="100%"//>
+  
 </header>
-<h1>List of concerts</h1> 
+
+<section>
+<h1>Lista de conciertos</h1> 
 <% @concerts.each do |concert|%>
 <div><%= concert.band_name %>
 
@@ -20,11 +23,32 @@
 <%= link_to 'Destroy', concert_path(concert), method: :delete, data: { confirm: 'Are you sure?' } %></div>
 <% end %>
 
-<p>
-    <%= link_to 'New concert', new_concert_path %>
+
+<h1>Conciertos con más likes</h1>
+<% @concerts.each do |concert| %>
+<div>
+<a><%= link_to concert.band_name, concert_path(concert) %></a> 
+<%= concert.likes %> likes!
+</div>
+<% end %>
+
+
+</section>
+
+<p class="button">
+    <%= link_to 'Añadir nuevo concierto', new_concert_path %>
 </p>
 
-<footer>Copyleft Ironhack 2015 ;)</footer>
+
+
+
+<aside>
+	Este mes no te pierdas...
+</aside>
+
+<footer>
+	
+	</br>Copyleft Ironhack 2015 ;)</footer>
 
   </body>
 </html>

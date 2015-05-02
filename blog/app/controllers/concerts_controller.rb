@@ -16,11 +16,20 @@ class ConcertsController < ApplicationController
      	redirect_to concert_path(@concert)
   	end
 
-    def destroy
-      @concert = Concert.find(params[:id])
-      @concert.destroy
 
-      redirect_to root_path
+
+    def like
+      @concert = Concert.find(params[:id])
+      @concert.likes = @concert.likes + 1;
+      @concert.save
+  
+      @concert = Concert.find(params[:id])
+      render :show 
+    end
+
+
+    def top
+       @concert = Concert.order(:likes)
     end
 
  private
